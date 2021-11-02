@@ -1,0 +1,628 @@
+/* Start FrameWork */
+
+body{
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.container1{
+    width: 1160px;
+    margin:auto;
+    position: relative;
+}
+
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper{
+    text-transform: uppercase;
+}
+.main-color{
+    color: #fff;
+}
+.main-background{
+    background-color: #f3c300;;
+}
+.second-background{
+    background-color: #04091e;
+}
+.overlay{
+    background: rgb(18 28 34 / 60%);
+    width: 100%;
+    height: 100%;
+}
+.overlay2{
+    background: rgba(1, 11, 32, 0.856);
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-input-placeholder{
+    font-size: 14px;
+}
+::-moz-input-placeholder{
+    font-size: 14px;
+}
+::-ms-input-placeholder{
+    font-size: 14px;
+}
+.hidden{
+    display: none;
+}
+.clr{
+    clear: both;
+}
+
+.bookbtn{
+    background-color: #f3c300;
+    border: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    border: 0;
+}
+.bookbtn:hover{
+    color: #fff;
+}
+.bookbtn.hvr-sweep-to-right::before{
+    background-color: #c59e01;
+    border:0;
+    -webkit-transition: all 0.5s linear ;
+    -o-transition: all 0.5s linear ;
+    -moz-transition: all 0.5s linear ;
+    transition: all 0.5s linear ;
+    cursor: pointer;
+}
+/* End FrameWork*/
+
+/* Start Loader */
+.loader{
+    width: 100%;
+    height: 100%;
+    background-color: #040b24;
+    position: fixed;
+    z-index: 10;
+    
+}
+.spinner {
+    width: 70px;
+    text-align: center;
+  }
+  
+  .spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #f3c300;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+  
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+} 40% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      -moz-transform: scale(1.0);
+      -ms-transform: scale(1.0);
+      -o-transform: scale(1.0);
+}
+  }
+
+/* End Loader */
+
+/* Start Header */
+.header{
+    background: url("../images/banner_bg.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  /*  height: 800px;*/
+    position: relative;
+}
+
+.header .navbar{
+    height: 80px;
+    margin: auto;
+    z-index: 100;
+    position: fixed;
+    transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -ms-transition:all .3s linear;
+    -o-transition:all .3s linear;
+}
+.scroll{
+    position: fixed;
+    width: 100%;
+    padding-left: 50px;
+    left: 0;
+}
+.navbar a{
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.navbar a:hover{
+    color: #52c5fd;
+}
+.collapse .navbar-nav  li.active a{
+    color: #52c5fd;
+}
+.navbar .nav-item{
+    padding-left: 17px;
+}
+.navbar-brand{
+    padding-left: 30px;
+}
+
+.navbar .navbar-brand{
+    padding-bottom: 15px;
+}
+#navbarNavDropdown{
+    margin-left: 250px;
+}
+.content{
+    padding-top: 220px;
+    padding-bottom: 484px;
+    color: #fff;
+}
+.content h2{
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 60px;
+}
+.content h6 {
+    letter-spacing: 1.4px;
+    font-size: 14px;
+    line-height: 30px; 
+}
+.content p{
+    letter-spacing: 1px;
+    line-height: 20px; 
+    padding-top: 20px;
+}
+.content button{
+    margin: auto;
+    width: 148px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 666;
+    margin-top: 40px;
+    -webkit-transition: all 0.5s linear ;
+    -o-transition: all 0.5s linear ;
+    -moz-transition: all 0.5s linear ;
+    transition: all 0.5s linear ;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-transition: all 0.5s linear ;
+}
+.content button:hover{
+    background-color: #b69201;
+}
+
+.content .hvr-sweep-to-right::before{
+    background-color: #c59e01;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.bookBox{
+    position: absolute;
+    bottom: 0;
+    padding: 40px 50px 30px;
+}
+.bookBox .sec1{
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.form-control{
+    margin-bottom: 10px;
+    border: 1px solid #2b3146;
+    background: transparent;
+    border-radius: 0;
+    font-size: 13px;
+    line-height: 38px;
+    padding: 0 20px;
+    color: #777;
+    
+}
+
+.form-control:focus{
+    margin-bottom: 10px;
+    border: 1px solid #2b3146;
+    background: transparent;
+    border-radius: 0;
+    font-size: 13px;
+    line-height: 38px;
+    padding: 0 20px;
+    color: #777;
+  
+}
+
+.box{
+    position: relative;
+}
+.box .icon{
+    position: absolute;
+    right:10px;
+    top: 7px;
+}
+
+
+.select:focus{
+    border: 1px solid #2b3146;
+    background: transparent;
+    border-radius: 0;   
+}
+.sec4 a{
+    background-color: #f3c300;
+    color: #fff;
+}
+
+/* End Header*/
+
+/* Start Hotel Accomodation*/
+.hotelAcc{
+    padding-top: 120px;
+}
+.sectitle{
+    margin-bottom: 50px;
+}
+.sectitle h2{
+    color: #222;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.sectitle p{
+    font-size: 14px;
+    line-height: 30px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.photo{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.photo img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+.photo img:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+.photo a {
+    position: absolute;
+    bottom: 27px;
+   /* left: 65px;*/
+    padding: 10px 28px;
+    color: #fff;
+}
+.secphoto h4{
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0;
+    margin-top: 30px;
+}   
+.secphoto h5{
+    color: #52c5fd;
+}
+
+/* End Hotel Accomodation*/
+
+
+/*Start Royal Facilities*/
+.royalFac{
+    margin-top: 100px;
+    background: url("../images/facilites_bg.jpg.webp");
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+.sectitle2{
+    margin-bottom: 80px;
+    padding-top: 130px;
+}
+.sectitle2 h2{
+    color: #fff;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.sectitle2 p{
+    font-size: 14px;
+    line-height: 30px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+.cards{
+    padding-bottom: 50px;
+}
+.card{
+        border: 1px solid #777;
+        border-radius: 10px;
+        background-color: rgba(249,249,255,.102);
+        padding: 25px 40px 37px;
+        color: #fff;
+        margin-bottom: 30px;
+        margin-left: 7px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+.card:end{
+    margin-left: 0;
+}
+.sec_h4 {
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+/*End Royal Facilities*/
+
+/* Start About Us */
+.aboutUs{
+    margin-top: 130px;
+}
+.part1{
+    display: flex;
+    align-items: center;
+}
+.part1 h2{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    color:#222;
+}
+.part1 p{
+    padding: 18px 100px 30px 0;
+    line-height: 30px;
+    word-spacing: .5px;
+    font-size: 15px;
+}
+.part1 a{
+    padding: 7px 25px;
+    background-color: #222;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+}
+/* End About Us */
+
+/* Start Testimonial */
+.Testimonial{
+    background-color: #f9f9ff;
+    padding-top: 150px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+.title{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    color:#222;
+}
+.textpart p{
+    line-height: 30px;
+    word-spacing: .5px;
+    font-size: 15px;
+}
+.tesitems{
+    padding-top: 80px;
+    
+}
+.testitem{
+    border: 1px solid #eee;
+    background: #fff;
+    padding: 40px;
+    margin-right: 10px;
+}
+.testitem:end{
+    margin-right: 0;
+}
+
+.item_content .sech4{
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #222;
+}
+.item_content p{
+    color: #8c8d9e;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+/* End Testimonial */
+
+
+/*Start Posts From Blog*/
+.posts{
+    padding-top: 120px;
+}
+.Postcontent{
+    margin-bottom: 50px;
+}
+.Postcontent h2{
+    color: #222;
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.Postcontent p{
+    font-size: 14px;
+    line-height: 30px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.plogPost{
+    margin-right: 15px;
+}
+.plogPost:first{
+    margin-right: 0px;
+}
+
+.plogPost .postimg{
+    overflow: hidden;
+}
+.postimg img{
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+.postimg img:hover{
+    transform: scale(1.3) rotate(10deg)    ;
+    -webkit-transform: scale(1.3) rotate(10deg)    ;
+    -moz-transform: scale(1.3) rotate(10deg)    ;
+    -ms-transform: scale(1.3) rotate(10deg)    ;
+    -o-transform: scale(1.3) rotate(10deg)    ;
+}
+.tags{
+    margin-top: 30px;
+    
+}
+.tags a{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    border: 1px solid #eeeeee;
+    display: inline-block;
+    padding: 1px 18px;
+    text-align: center;
+    color: #222222;
+    -webkit-transition: all 0.5s linear ;
+    -o-transition: all 0.5s linear ;
+    -moz-transition: all 0.5s linear ;
+    transition: all 0.5s linear ;
+    cursor: pointer;
+
+}
+.tags a:hover{
+    color: #222222;
+}
+
+.tags .hvr-sweep-to-right::before{
+    background-color: #ecc00f;  
+}
+.postDetails .sec_h4{
+    color: black;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.postDetails .sec_h4:hover{
+    color: rgb(44, 56, 165);
+  
+}
+.postDetails .date{
+    color: #222;
+}
+/*End Posts From Blog*/
+
+/*Start Footer*/
+footer{
+    width: 100%;
+    background: #04091e;
+    padding: 50px 0;
+    margin-top: 150px;
+}
+footer .footer-text{
+    float: left;
+   
+}
+footer .footer-social{
+    float: right;
+   
+}
+/*End Footer*/

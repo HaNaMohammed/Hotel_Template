@@ -1,0 +1,5 @@
+المكتبات المهمه عندي عشان اعمل project
+1-jQuery
+2-fontAswesome
+3-Nice Scroll
+4-Normalize.Css
